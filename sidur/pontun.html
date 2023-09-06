@@ -43,6 +43,7 @@
         <label for="mat">Veldu af matseðli</label>
         <p>réttur 1</p>
         <select name="rettur" id="">
+            <option value="placeholder">veldu af matseðil</option>
             <option value="Lasagna">Lasagna með fersku salati</option>
             <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
             <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
@@ -55,6 +56,7 @@
         </select>
         <p>réttur 2</p>
         <select name="rettur1">
+            <option value="placeholder">veldu af matseðil</option>
             <option value="Lasagna">Lasagna með fersku salati</option>
             <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
             <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
@@ -67,6 +69,7 @@
         </select>
         <p>réttur 3</p>
         <select name="rettur1">
+            <option value="placeholder">veldu af matseðil</option>
             <option value="Lasagna">Lasagna með fersku salati</option>
             <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
             <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
@@ -79,6 +82,7 @@
         </select>
         <p>réttur 4</p>
         <select name="rettur1">
+            <option value="placeholder">veldu af matseðil</option>
             <option value="Lasagna">Lasagna með fersku salati</option>
             <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
             <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
@@ -91,6 +95,7 @@
         </select>
         <p>réttur 5</p>
         <select name="rettur1">
+            <option value="placeholder">veldu af matseðil</option>
             <option value="Lasagna">Lasagna með fersku salati</option>
             <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
             <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
@@ -101,27 +106,34 @@
             <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
             <option value="pizza">Klassísk pizza</option>
         </select>
+
+        <label for="street">Heimilisfang</label> 
+        <input type="text" placeholder="Heimilisfang"/>
     </fieldset>
-        <!-- Tjs script til að bæta við rétt -->
+
+        <!-- js script til að bæta við rétt -->
 
 <!--
-    <label for="mat">Veldu af matseðli</label>
+    <fieldset>
+        <legend><h3>Panta mat</h3></legend> 
+        <label for="mat">Veldu af matseðli</label>
 
-    <div id="alacart">
-    <select name="rettur" placeholder="Veldu rétt af matseðli" >
-        <option value="Lasagna">Lasagna með fersku salati</option>
-        <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
-        <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
-        <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
-        <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
-        <option value="Fsupa">Daglega ný súpa</option>
-        <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
-        <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
-        <option value="pizza">Klassísk pizza</option>
-    </select>
-    </div>
+        <div id="alacart">
+        <select name="rettur" placeholder="Veldu rétt af matseðli" >
+            <option value="Lasagna">Lasagna með fersku salati</option>
+            <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
+            <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
+            <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
+            <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
+            <option value="Fsupa">Daglega ný súpa</option>
+            <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
+            <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
+            <option value="pizza">Klassísk pizza</option>
+        </select>
+        </div>
 
-    <button id="add-mat">Bæta við mat ?</button>
+        <button id="add-mat">Bæta við mat ?</button>
+    </fieldset>
 
     <script>
     let courseCount = 1;
@@ -157,8 +169,6 @@
  -->
 
     <fieldset>
-        <label for="street">Heimilisfang</label> 
-        <input type="text" placeholder="Heimilisfang"/>
 
         <legend><h3>Þínar upplýsingar</h3></legend>
 
