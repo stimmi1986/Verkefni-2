@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 24px 0 24px 0;
+}
+
+.opnunar{
+}
+
+.her{
+
+}
