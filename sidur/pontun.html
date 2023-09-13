@@ -1,219 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta property="og:title" content="1337 Restaurant">
-        <meta property="og:description" content="***** stjörnu restaurant">
-        <meta property="og:type" content="Restaurant" />
-        <meta property="og:image" src="./myndir/sharing.jpg">
-        <meta property="og:url" content="https://soa-vef1v2.netlify.app/">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>1337 Restaurant</title>
-    </head>
-<body>
-<nav>
-    <ul>
-        <li><a href="../index.html">1337 Restaurant</a></li>
-        <li><a href="./um.html">Um okkur</a></li>
-        <li><a href="./matsedill.html">Matseðill</a></li>
-        <li><a href="./pontun.html">Panta</a></li>
-    </ul>
-</nav>
 
-<h1>Pantanir</h1> 
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="1337 Restaurant">
+    <meta property="og:description" content="***** stjörnu restaurant">
+    <meta property="og:type" content="Restaurant" />
+    <meta property="og:image" src="./myndir/sharing.jpg">
+    <meta property="og:url" content="https://soa-vef1v2.netlify.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <title>1337 Restaurant</title>
+</head>
 
-<p>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</p>
+<body id="pontun">
+    <header>
+        <h1>Pantanir</h1>
+        <p>
+            Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða
+            þú sækir.
+        </p>
+    </header>
 
-<form action="submit">
-    <fieldset>
-        <legend><h3>Panta borð</h3></legend> 
+    <nav>
+        <ul>
+            <li><a href="../index.html">Forsíða</a></li>
+            <li><a href="./um.html">Um Veitingastaðinn</a></li>
+            <li><a href="./matsedill.html">Matseðill</a></li>
+            <li><a class="active" href="./pontun.html">Pöntunarsíða</a></li>
+        </ul>
+    </nav>
 
-        <lable for="datetime-local">Hvenær viltu koma?</lable>
-        <input type="datetime-local" />
-        <label for="">Hve mörg?</label> 
-        <input type="number" id="tentacles" placeholder="0" name="tentacles" min="1" max="10" />
-        <label>Viltu taka eitthvað fram?</label>
-        <textarea>eru einhver ofnæmi?</textarea>
-    </fieldset>
+    <div class="main-container">
+        <main>
+            <form class="form-container" action="submit">
+                <fieldset class="bord">
+                    <legend>
+                        <h3>Panta borð</h3>
+                    </legend>
 
-    <fieldset>
-        <legend><h3>Panta mat</h3></legend> 
+                    <label for="datetime-local">Hvenær viltu koma?</label>
+                    <input type="datetime-local" />
 
-        <label for="mat">Veldu af matseðli</label>
-        <p>réttur 1</p>
-        <select name="rettur" id="">
-            <option value="placeholder">veldu af matseðil</option>
-            <option value="Lasagna">Lasagna með fersku salati</option>
-            <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
-            <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
-            <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
-            <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
-            <option value="Fsupa">Daglega ný súpa</option>
-            <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
-            <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
-            <option value="pizza">Klassísk pizza</option>
-        </select>
-        <p>réttur 2</p>
-        <select name="rettur1">
-            <option value="placeholder">veldu af matseðil</option>
-            <option value="Lasagna">Lasagna með fersku salati</option>
-            <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
-            <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
-            <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
-            <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
-            <option value="Fsupa">Daglega ný súpa</option>
-            <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
-            <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
-            <option value="pizza">Klassísk pizza</option>
-        </select>
-        <p>réttur 3</p>
-        <select name="rettur1">
-            <option value="placeholder">veldu af matseðil</option>
-            <option value="Lasagna">Lasagna með fersku salati</option>
-            <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
-            <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
-            <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
-            <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
-            <option value="Fsupa">Daglega ný súpa</option>
-            <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
-            <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
-            <option value="pizza">Klassísk pizza</option>
-        </select>
-        <p>réttur 4</p>
-        <select name="rettur1">
-            <option value="placeholder">veldu af matseðil</option>
-            <option value="Lasagna">Lasagna með fersku salati</option>
-            <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
-            <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
-            <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
-            <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
-            <option value="Fsupa">Daglega ný súpa</option>
-            <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
-            <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
-            <option value="pizza">Klassísk pizza</option>
-        </select>
-        <p>réttur 5</p>
-        <select name="rettur1">
-            <option value="placeholder">veldu af matseðil</option>
-            <option value="Lasagna">Lasagna með fersku salati</option>
-            <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
-            <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
-            <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
-            <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
-            <option value="Fsupa">Daglega ný súpa</option>
-            <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
-            <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
-            <option value="pizza">Klassísk pizza</option>
-        </select>
+                    <label for="size">Hve mörg?</label>
+                    <select id="size">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                    <label for="comment">Viltu taka eitthvað fram?</label>
+                    <textarea class="comment">eru einhver ofnæmi?</textarea>
+                </fieldset>
 
-        <label for="street">Heimilisfang</label> 
-        <input type="text" placeholder="Heimilisfang"/>
-    </fieldset>
+                <fieldset class="mat">
+                    <legend>
+                        <h3>Panta mat</h3>
+                    </legend>
 
-        <!-- js script til að bæta við rétt -->
+                    <label for="mat">Veldu af matseðli</label>
 
-<!--
-    <fieldset>
-        <legend><h3>Panta mat</h3></legend> 
-        <label for="mat">Veldu af matseðli</label>
+                    <p>réttur 1</p>
+                    <select name="rettur">
+                        <option value="placeholder">veldu af matseðil</option>
+                        <option value="Lasagna">Lasagna með fersku salati</option>
+                        <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
+                        <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
+                        <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
+                        <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
+                        <option value="Fsupa">Daglega ný súpa</option>
+                        <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
+                        <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
+                        <option value="pizza">Klassísk pizza</option>
+                    </select>
 
-        <div id="alacart">
-        <select name="rettur" placeholder="Veldu rétt af matseðli" >
-            <option value="Lasagna">Lasagna með fersku salati</option>
-            <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
-            <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
-            <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
-            <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
-            <option value="Fsupa">Daglega ný súpa</option>
-            <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
-            <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
-            <option value="pizza">Klassísk pizza</option>
-        </select>
-        </div>
+                    <p>réttur 2</p>
+                    <select name="rettur1">
+                        <option value="placeholder">veldu af matseðil</option>
+                        <option value="Lasagna">Lasagna með fersku salati</option>
+                        <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
+                        <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
+                        <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
+                        <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
+                        <option value="Fsupa">Daglega ný súpa</option>
+                        <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
+                        <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
+                        <option value="pizza">Klassísk pizza</option>
+                    </select>
 
-        <button id="add-mat">Bæta við mat ?</button>
-    </fieldset>
+                    <p>réttur 3</p>
+                    <select name="rettur1">
+                        <option value="placeholder">veldu af matseðil</option>
+                        <option value="Lasagna">Lasagna með fersku salati</option>
+                        <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
+                        <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
+                        <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
+                        <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
+                        <option value="Fsupa">Daglega ný súpa</option>
+                        <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
+                        <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
+                        <option value="pizza">Klassísk pizza</option>
+                    </select>
 
-    <script>
-    let courseCount = 1;
-    function addCourse() {
-        courseCount++;
-        const select = document.createElement('select');
-        select.name = `rettur${courseCount}`;
-        
-        const options = [
-        'Lasagna með fersku salati',
-        'Kremkennt risotto með sveppum og fersku grænmeti',
-        'Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum',
-        'Quesadilla með osti og fersku salsa',
-        'Falafel með hummus, pitu og fersku salati',
-        'Daglega ný súpa',
-        'Kryddaðar sætkartöflur með vorlauk',
-        'Hamborgari með frönskum kartöflum',
-        'Klassísk pizza'
-        ];
-        
-        options.forEach(optionText => {
-        const option = document.createElement('option');
-        option.value = optionText;
-        option.text = optionText;
-        select.appendChild(option);
-        });
-        
-        document.getElementById('alacart').appendChild(select);
-    }
+                    <p>réttur 4</p>
+                    <select name="rettur1">
+                        <option value="placeholder">veldu af matseðil</option>
+                        <option value="Lasagna">Lasagna með fersku salati</option>
+                        <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
+                        <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
+                        <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
+                        <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
+                        <option value="Fsupa">Daglega ný súpa</option>
+                        <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
+                        <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
+                        <option value="pizza">Klassísk pizza</option>
+                    </select>
 
-    document.getElementById('add-mat').addEventListener('click', addCourse);
-    </script>
- -->
+                    <p>réttur 5</p>
+                    <select name="rettur1">
+                        <option value="placeholder">veldu af matseðil</option>
+                        <option value="Lasagna">Lasagna með fersku salati</option>
+                        <option value="risotto">Kremkennt risotto með sveppum og fersku grænmeti</option>
+                        <option value="Pestó">Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</option>
+                        <option value="Quesadilla">Quesadilla með osti og fersku salsa</option>
+                        <option value="hummus">Falafel með hummus, pitu og fersku salati</option>
+                        <option value="Fsupa">Daglega ný súpa</option>
+                        <option value="sætkartöflur">Kryddaðar sætkartöflur með vorlauk</option>
+                        <option value="Hamborgari">Hamborgari með frönskum kartöflum</option>
+                        <option value="pizza">Klassísk pizza</option>
+                    </select>
 
-    <fieldset>
+                    <label for="street">Heimilisfang</label>
+                    <input type="text" placeholder="Heimilisfang" />
+                </fieldset>
 
-        <legend><h3>Þínar upplýsingar</h3></legend>
+                <fieldset class="your-info">
 
-        <label for="nafn">fullt nafn</label>
-        <input type="nafn" required placeholder="Fullt Nafn"/>
-        <label for="email">E-mail</label>
-        <input type="email" required placeholder="E-mail"/>
-        <label for="simi">Sími</label>
-        <input type="simi" required placeholder="Síma Númar"/>
-    </fieldset>
+                    <legend>
+                        <h3>Þínar upplýsingar</h3>
+                    </legend>
 
-    <fieldset>
-        <legend><h3>Samþykkja og panta</h3></legend>
-        <p>Ég samþykki skilmála Veitingastaðsins</p> 
-        <input type="checkbox" required />
-        <button>Panta</button>
-    </fieldset>
-    <a href="../index.html">Aftur á forsíðu</a>
+                    <label for="nafn">Fullt nafn</label>
+                    <input type="nafn" required placeholder="Fullt Nafn" />
+                    <label for="email">E-mail</label>
+                    <input type="email" required placeholder="E-mail" />
+                    <label for="simi">Sími</label>
+                    <input type="simi" required placeholder="Síma Númar" />
+                </fieldset>
+
+                <fieldset class="agreement">
+                    <legend>
+                        <h3>Samþykkja og panta</h3>
+                    </legend>
+                    <div class="checkbox">
+                        <input type="checkbox" required />
+                        <p>Ég samþykki skilmála Veitingastaðsins</p>
+                    </div>
+                    <button>Panta</button>
+                </fieldset>
+            </form>
+            <div class="divider"></div>
+            <div class="back">
+                <a href="../index.html">Aftur á forsíðu</a>
+            </div>
+        </main>
+    </div>
 
     <footer>
-        <h2>Opnunartími</h2> 
-    
-        <dl>
-            <dt>Mánudaga til fimmtudaga</dt>
-            <dd>09:00–18:00</dd>
-            <dt>Föstudaga</dt>
-            <dd>10:00–22:00</dd>
-            <dt>Laugardaga</dt>
-            <dd>11:00–22:00</dd>
-            <dt>Sunnudaga</dt>
-            <dd>Lokað</dd>
-        </dl>
-    
-        <h2>Hér erum við</h2>
-    
-        <dl>
-            <dt>Veitingastaðurinn ehf.</dt>
-            <dt>Aðalgata 10</dt>
-            <dt>100 Reykjavík</dt>
-            <dt>Sími 333-4567</dt>
-            <dt>veitingastadur@example.org</dt>
-        </dl>
-    
+        <section class="footer-container">
+            <h2>Opnunartími</h2>
+
+            <dl>
+                <dt>Mánudaga til fimmtudaga</dt>
+                <dd>09:00–18:00</dd>
+                <dt>Föstudaga</dt>
+                <dd>10:00–22:00</dd>
+                <dt>Laugardaga</dt>
+                <dd>11:00–22:00</dd>
+                <dt>Sunnudaga</dt>
+                <dd>Lokað</dd>
+            </dl>
+        </section>
+        <section class="footer-container">
+            <h2>Hér erum við</h2>
+
+            <dl>
+                <dt>Veitingastaðurinn ehf.</dt>
+                <dt>Aðalgata 10</dt>
+                <dt>100 Reykjavík</dt>
+                <dt>Sími 333-4567</dt>
+                <dt>veitingastadur@example.org</dt>
+            </dl>
+        </section>
     </footer>
 
-</form>
 </body>
+
 </html>

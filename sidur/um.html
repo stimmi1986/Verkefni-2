@@ -1,83 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta property="og:title" content="1337 Restaurant">
-        <meta property="og:description" content="***** stjörnu restaurant">
-        <meta property="og:type" content="Restaurant" />
-        <meta property="og:image" src="./myndir/sharing.jpg">
-        <meta property="og:url" content="https://soa-vef1v2.netlify.app/">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>1337 Restaurant</title>
-    </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">1337 Restaurant</a></li>
-            <li><a href="./um.html">Um okkur</a></li>
-            <li><a href="./matsedill.html">Matseðill</a></li>
-            <li><a href="./pontun.html">Panta</a></li>
-        </ul>
-    </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="1337 Restaurant">
+    <meta property="og:description" content="***** stjörnu restaurant">
+    <meta property="og:type" content="Restaurant" />
+    <meta property="og:image" src="./myndir/sharing.jpg">
+    <meta property="og:url" content="https://soa-vef1v2.netlify.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <title>1337 Restaurant</title>
+</head>
+
+<body id="um">
     <header>
-        <h1>Um Veitingastaðinn</h1> 
+        <h1>Um Veitingastaðinn</h1>
 
         <p>Við erum búin að elda mat fyrir fólk síðan 2001.</p>
     </header>
-    <article>
-        <section>
-            <h1>Sagan</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Forsíða</a></li>
+            <li><a class="active" href="./um.html">Um Veitingastaðinn</a></li>
+            <li><a href="./matsedill.html">Matseðill</a></li>
+            <li><a href="./pontun.html">Pöntunarsíða</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <main>
+            <section>
+                <h1>Sagan</h1>
 
-            <p>Við byrjuðum að elda árið 2001 og nam fringilla tellus a nisl scelerisque, ut varius nibh blandit. Donec dignissim vehicula justo in aliquet. In rhoncus congue ipsum ut volutpat. Morbi vehicula leo vitae odio viverra, malesuada euismod libero porttitor. Donec metus purus, luctus nec tortor sed, accumsan fermentum libero. Morbi vel lacus vel nisi molestie sollicitudin eget sed massa. Curabitur id faucibus nunc, ut blandit justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac purus ac elit vehicula pulvinar. Sed vel nunc nulla.</p>
-        </section>
+                <p>Við byrjuðum að elda árið 2001 og nam fringilla tellus a nisl scelerisque, ut varius nibh blandit.
+                    Donec
+                    dignissim vehicula justo in aliquet. In rhoncus congue ipsum ut volutpat. Morbi vehicula leo vitae
+                    odio
+                    viverra, malesuada euismod libero porttitor. Donec metus purus, luctus nec tortor sed, accumsan
+                    fermentum libero. Morbi vel lacus vel nisi molestie sollicitudin eget sed massa. Curabitur id
+                    faucibus
+                    nunc, ut blandit justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac purus ac
+                    elit
+                    vehicula pulvinar. Sed vel nunc nulla.</p>
+            </section>
 
-        <section>
-            <h1>Starfsfólk</h1>
+            <div class="divider"></div>
 
-            <h2>Anna Jónsdóttir</h2>
-            <img src="../myndir/anna.jpg" alt="Anna Jónsdóttir, Eigandi">
-            <p>Eigandi.</p>
+            <section class="staff">
+                <h1>Starfsfólk</h1>
+                <div class="anna">
+                    <h2>Anna Jónsdóttir</h2>
+                    <img src="../myndir/anna.jpg" alt="Anna Jónsdóttir, Eigandi">
+                    <p>Eigandi.</p>
+                </div>
 
-            <h1>Adam Adamsson</h1>
+                <div class="adam">
+                    <h1>Adam Adamsson</h1>
+                    <img src="../myndir/adam.jpg" alt="Adam Adamsson, Rekstrarstjóri">
+                    <p>Rekstrarstjóri</p>
+                </div>
 
-            <img src="../myndir/adam.jpg" alt="Adam Adamsson, Rekstrarstjóri">
-            <p>Rekstrarstjóri</p>
-            <h3>Benni</h3> 
-            <img src="../myndir/benni.jpg" alt="Benni, Kokkur">
-            <p>Kokkur</p>
-            <h3>Birna</h3> 
-            <img src="../myndir/birna.jpg" alt="Birna, kokkur">
-            <p>Kokkur</p>
-        </section>
-        <a href="../index.html">Aftur á forsíðu</a>
-    </article>
+                <div class="benni">
+                    <h3>Benni</h3>
+                    <img src="../myndir/benni.jpg" alt="Benni, Kokkur">
+                    <p>Kokkur</p>
+                </div>
+
+                <div class="birna">
+                    <h3>Birna</h3>
+                    <img src="../myndir/birna.jpg" alt="Birna, kokkur">
+                    <p>Kokkur</p>
+                </div>
+
+            </section>
+
+
+            <!-- fannst þetta vanta ?? -->
+            <div class="divider"></div>
+
+            <div class="back">
+                <a href="../index.html">Aftur á forsíðu</a>
+            </div>
+        </main>
+    </div>
 
     <footer>
-        <h2>Opnunartími</h2> 
-    
-        <dl>
-            <dt>Mánudaga til fimmtudaga</dt>
-            <dd>09:00–18:00</dd>
-            <dt>Föstudaga</dt>
-            <dd>10:00–22:00</dd>
-            <dt>Laugardaga</dt>
-            <dd>11:00–22:00</dd>
-            <dt>Sunnudaga</dt>
-            <dd>Lokað</dd>
-        </dl>
-    
-        <h2>Hér erum við</h2>
-    
-        <dl>
-            <dt>Veitingastaðurinn ehf.</dt>
-            <dt>Aðalgata 10</dt>
-            <dt>100 Reykjavík</dt>
-            <dt>Sími 333-4567</dt>
-            <dt>veitingastadur@example.org</dt>
-        </dl>
-    
+        <section class="footer-container">
+            <h2>Opnunartími</h2>
+
+            <dl>
+                <dt>Mánudaga til fimmtudaga</dt>
+                <dd>09:00–18:00</dd>
+                <dt>Föstudaga</dt>
+                <dd>10:00–22:00</dd>
+                <dt>Laugardaga</dt>
+                <dd>11:00–22:00</dd>
+                <dt>Sunnudaga</dt>
+                <dd>Lokað</dd>
+            </dl>
+        </section>
+        <section class="footer-container">
+            <h2>Hér erum við</h2>
+
+            <dl>
+                <dt>Veitingastaðurinn ehf.</dt>
+                <dt>Aðalgata 10</dt>
+                <dt>100 Reykjavík</dt>
+                <dt>Sími 333-4567</dt>
+                <dt>veitingastadur@example.org</dt>
+            </dl>
+        </section>
     </footer>
 
 </body>
+
 </html>
