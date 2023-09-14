@@ -219,7 +219,7 @@ table tbody tr:nth-child(odd) {
 
 .back {
     padding: .5rem 0 .5rem 0;
-}
+}  
 
 fieldset {
     padding: 1rem;
@@ -251,4 +251,7 @@ input {
     width: 100%;
     height: 6rem;
     padding: 1rem;
+}
+.label input{
+    display: inline-block;
 }
