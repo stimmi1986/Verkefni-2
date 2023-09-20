@@ -1,257 +1,270 @@
 /* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Reiknum stærð á öllum boxum sem border-box */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 /* og látum erfast á allt */
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
 .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
-h1{
-    text-align: start;
-    font-family: 'Lora', serif;
-    padding-bottom: 1rem;
+/* Stillingar */
+:root {
+  /* Grunn bilið okkar er 1rem == 16px */
+  --font-base-body-px: 16px;
+  --spacing: 1rem;
+  
+  /* Hámarksbreidd á efni */
+  --max-width: 900px;
+  
+  /* Border breiddir */
+  --border-small: 1px;
+  --border-large: 8px;
+  --border-radius: 6px;
+  
+  /* Litir */
+  --color-gold: #ffe7ae;
+  --color-gold-light: #fff1cf;
+  --color-dark: #2f0505;
+  --color-light: #fff9ee;
+  
+  /* Letur stillingar */
+  --font-base-size: 1rem;
+  --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Lora', Georgia, serif;
 }
 
-h2{
-    text-align: start;
-    font-family: 'Lora', serif;
-    padding: 1rem 0 1rem 0;
+@font-face {
+  font-family: 'Lora';
+  src: url('./fonts/Lora-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans Display';
+  src: url('./fonts/NotoSansDisplay-VariableFont_wdth_wght.ttf') format('truetype');
 }
 
-h3 {
-    text-align: start;
-    font-family: 'Lora', serif;
-    padding-bottom: 1rem;
-}
+/*** Almennt ***/
 
-p{
-    text-align: start;
-    font-size: 16px;
-    font-family: 'Lora', serif;
-    padding: 0 0 .5rem 0;
+html,
+input,
+select,
+button {
+  font-size: var(--font-base-body-px);
+  font-family: var(--font-family-heading);
 }
 
 a {
-    color: #000;
+  color: inherit;
 }
 
-header {
-    display: block;
-    padding: 1rem;
-    width: 100%;
-    text-align: center;
-    color: #fff9ee;
-    background-color: #2f0505;
-    border-bottom: 8px solid #ffe7ae;
+h2,
+h3,
+section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing);
 }
 
-header p{
-    text-align: center;
-    padding: 0;
+p{
+  font-family: var(--font-family-base);
+  font-size: var(--font-base-size);
 }
-header h1{
-    text-align: center;
-    padding-bottom: 0;
+
+img {
+  width: auto;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top center;
 }
+
+/*** Haus ***/
+
+body > header {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing);
+  align-items: center;
+
+  padding-bottom: var(--spacing);
+
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+/*** Valmynd ***/
 
 nav {
-    text-align: center;
-    width: 100%;
-    background-color: #fff9ee;
+  margin-bottom: var(--spacing);
+  padding: var(--spacing);
+  
+  font-family: var(--font-family-base);
+
+  border-bottom: var(--border-large) solid var(--color-gold);
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
 nav ul {
-    list-style: none;
+  list-style: none;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline-block;
-    padding: 1rem;
+  display: inline-block;
+  margin-right: var(--spacing);
 }
 
-nav ul li a{
-    color: #2f0505;
+/*** Meginmál ***/
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+  max-width: var(--max-width);
 }
 
-#index .active {
-    font-weight: 800;
-    text-decoration: none;
-}
-
-#um .active {
-    font-weight: 800;
-    text-decoration: none;
-}
-
-#pontun .active {
-    font-weight: 800;
-    text-decoration: none;
-}
-
-#matsedill .active {
-    font-weight: 800;
-    text-decoration: none;
-}
-
-.hero-container {
-    display: block;
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
-}
-
-.box {
-    display: block;
-    text-align: start;
-    border-bottom: 2px solid #ffe7ae;
-    padding-top: 1rem;
-}
-
-.box ul{
-    width: 100%;
-    padding-bottom: 1rem;
-}
-
-.box ul li{
-    display: inline-block;
-    width: 49.7%;
-    list-style: none;
-    padding: .5rem 0 .5rem 0;
-}
-
-.box ul li p{
-    padding: 0;
-}
-
-.a{
-    padding-top: 1rem;
-}
-
-section {
-    display: inline-grid;
-    width: 49.7%;
-    padding-bottom: 1rem;
-}
-section img{
-    width: 100%;
-}
-
-dl dd {
-    padding-bottom: 0.5rem;
-}
-
-dt a{
-    color: #fff9ee;
-}
-
-.visit {
-    text-align: start;
-    padding: 1.5rem 0 1rem 0;
-}
+/*** Fótur ***/
 
 footer {
-    text-align: center;
-    width: 100%;
-    color: #fff9ee;
-    background-color: #2f0505;
-    border-top: 8px solid #ffe7ae;
-}
-footer h2{
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing);
+  padding: var(--spacing);
+
+  border-top: var(--border-large) solid var(--color-gold);
+
+  background-color: var(--color-dark);
+  color: var(--color-light);
+
+  text-align: center;
 }
 
-.footer-container {
-    max-width: 900px;
-    margin: auto;
+footer ul {
+  font-family: var(--font-family-base);
+  list-style: none;
 }
 
-.table-container {
-    padding-top: 1rem;
-    max-width: 900px;
-    margin: auto;
+/*** Box! ***/
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+.box{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  margin-bottom: var(--spacing);
+  padding: var(--spacing);
+  padding-bottom: var(--spacing);
+  width: 49%;
+
+  list-style: none;
+
+  background-color: var(--color-gold);
+
+  border-radius: var(--border-radius);
+}
+
+.box h3{
+  border-bottom: var(--border-small) solid;
+}
+
+.box a {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-end;
+  font-family: var(--font-family-base);
+  font-weight: bold;
+}
+
+/*** Opnunartími ***/
+dl{
+  font-family: var(--font-family-base);
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: var(--spacing);
+}
+
+/*** Matseðill ***/
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  font-family: var(--font-family-base);
+  margin-bottom: var(--spacing);
+
+  border-spacing: 0;
 }
 
-table thead {
-    height: 2rem;
+table th,
+table td {
+  padding: 0.5rem;
 }
 
-table thead th {
-    padding: 0 0.5rem 0 0.5rem;
+table tbody tr:nth-child(2n + 1) {
+  background-color: var(--color-gold);
 }
 
-table tbody tr {
-    height: 2rem;
-}
-
-table tbody tr td {
-    padding: 0 0.5rem 0 0.5rem;
-}
-
-table tbody tr:nth-child(odd) {
-    background-color: #ffe7ae;
-}
-
-.back {
-    padding: .5rem 0 .5rem 0;
-}  
+/*** Pöntunarform ***/
 
 fieldset {
-    padding: 1rem;
-    border: solid 1px #ffe7ae;
+  margin-bottom: var(--spacing);
+  padding: var(--spacing);
+
+  border: var(--border-small) solid;
 }
 
-legend h3{
-    padding: 0;
+fieldset legend {
+  font-weight: bold;
 }
 
-select {
-    display: block;
-    padding: 1rem;
-    margin-bottom: 1rem;
+fieldset div {
+  margin-bottom: var(--spacing);
 }
 
-label {
-    display: block;
-    text-align: start;
-    padding-bottom: 0.5rem;
+fieldset div label {
+  display: block;
 }
 
-input {
-    display: block;
-    padding: .5rem 0 .5rem 0;
+fieldset input,
+fieldset select,
+fieldset textarea {
+  padding: 0.5rem;
 }
 
-.comment {
-    width: 100%;
-    height: 6rem;
-    padding: 1rem;
+fieldset input[type='checkbox'] {
+  display: inline-block;
+  margin-right: 0.5rem;
 }
-.label input{
-    display: inline-block;
+
+form button {
+  padding: 0.25rem;
+  border-radius: 6px;
 }
